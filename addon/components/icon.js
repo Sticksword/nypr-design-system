@@ -44,7 +44,8 @@ export default Component.extend({
    */
   svgPartial: computed('icon', function() {
     let owner = getOwner(this);
-    let templateExists = Boolean(owner.lookup(`templates/component:icons/${this.icon}`));
+    debugger;
+    let templateExists = Boolean(owner.lookup(`template:icons/${this.icon}`));
     if (templateExists) {
       return `components/icons/${this.icon}`;
     } else {

@@ -8,6 +8,7 @@ module('Integration | Component | button', function(hooks) {
   setupRenderingTest(hooks);
 
   test('it renders a button with a label and an icon', async function(assert) {
+    debugger;
     const BUTTON_LABEL = 'Button';
     const BUTTON_ICON = 'audio';
     this.set('label', BUTTON_LABEL);
