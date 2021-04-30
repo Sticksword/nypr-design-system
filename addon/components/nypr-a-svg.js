@@ -37,7 +37,7 @@ export default Component.extend({
   svgPartial: computed(function() {
     let owner = getOwner(this);
     debugger;
-    let templateExists = Boolean(owner.lookup(`template:nypr-a-svg/${this.icon}`));
+    let templateExists = Boolean(owner.lookup(`component:nypr-a-svg/${this.icon}`));
     if (templateExists) {
       return `components/nypr-a-svg/${this.icon}`;
     } else {

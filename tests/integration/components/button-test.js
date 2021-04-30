@@ -16,6 +16,7 @@ module('Integration | Component | button', function(hooks) {
 
     await render(hbs`<Button @label={{label}} @icon={{icon}} />`);
 
+    debugger;
     assert.dom('.button-label').exists();
     assert.dom('.button-label').hasText(BUTTON_LABEL);
     assert.dom('svg.button-icon').exists();
